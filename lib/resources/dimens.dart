@@ -1,8 +1,9 @@
 abstract class Dimens{
 
-  
+  //create uninstanceable class 
+  Dimens._();
 
-  static const int small = 8 ;
-  static const int medium = 12 ;
-  static const int large = 24 ;
+  static const double small = 8.0 ;
+  static const double medium = 12 ;
+  static const double large = 24 ;
 }

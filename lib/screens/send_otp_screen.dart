@@ -1,0 +1,29 @@
+import 'package:flutter/material.dart';
+import 'package:watchstore/gen/assets.gen.dart';
+import 'package:watchstore/resources/dimens.dart';
+import 'package:watchstore/resources/strings.dart';
+import 'package:watchstore/utils/extenstions/sizedbox_extenstion.dart';
+import 'package:watchstore/widgets/custom_text_field_widget.dart';
+
+class SendOtpScreen extends StatelessWidget {
+  const SendOtpScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+
+    Size size = MediaQuery.of(context).size;
+    TextEditingController _controller = TextEditingController();
+
+    return Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Image.asset(Assets.images.mainLogo.path, width: size.width),
+          Dimens.large.height, // use extenstion
+          CustomTextFieldWidget(lable: Strings.enterYourNumber, hint: '09*********', controller: _controller)
+        ],
+      ),
+    );
+  }
+}
