@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:watchstore/resources/colors.dart';
 import 'package:watchstore/resources/dimens.dart';
+import 'package:watchstore/resources/text_style.dart';
 import 'package:watchstore/utils/extenstions/sizedbox_extenstion.dart';
 
 class CustomTextFieldWidget extends StatelessWidget {
@@ -36,11 +37,11 @@ class CustomTextFieldWidget extends StatelessWidget {
               children: [
                 Text(
                   timer,
-                  style: const TextStyle(color: AppColors.title),
+                  style: CustomTextStyle.titleTextStyle,
                 ),
                 Text(
                   lable,
-                  style: const TextStyle(color: AppColors.title),
+                  style: CustomTextStyle.titleTextStyle,
                 ),
               ],
             ),
@@ -52,7 +53,7 @@ class CustomTextFieldWidget extends StatelessWidget {
             child: TextField(
               controller: controller,
               textAlign: TextAlign.center,
-              decoration: InputDecoration(hintText: hint, prefixIcon: icon),
+              decoration: InputDecoration(hintText: hint, prefixIcon: icon , hintStyle: CustomTextStyle.hintTextStyle),
             ),
           ),
         ],
