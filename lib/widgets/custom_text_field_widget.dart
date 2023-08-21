@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:watchstore/resources/colors.dart';
 import 'package:watchstore/resources/dimens.dart';
 import 'package:watchstore/resources/text_style.dart';
 import 'package:watchstore/utils/extenstions/sizedbox_extenstion.dart';

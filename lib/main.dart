@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:watchstore/config/routing/route_path.dart';
+import 'package:watchstore/config/routing/router.dart';
 import 'package:watchstore/config/theme/theme.dart';
-import 'package:watchstore/screens/get_otp_screen.dart';
-import 'package:watchstore/screens/register_screen.dart';
-import 'package:watchstore/screens/send_otp_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +15,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: lightTheme(),
-      home: RegisterScreen(),
+      initialRoute: RoutePath.mainRoute,
+      routes: routes,
     );
   }
 }

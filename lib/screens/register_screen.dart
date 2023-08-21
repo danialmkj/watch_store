@@ -3,10 +3,9 @@ import 'package:watchstore/resources/dimens.dart';
 import 'package:watchstore/resources/strings.dart';
 import 'package:watchstore/utils/extenstions/sizedbox_extenstion.dart';
 import 'package:watchstore/widgets/custom_avatar.dart';
+import 'package:watchstore/widgets/custom_register_app_bar.dart';
 import 'package:watchstore/widgets/custom_text_field_widget.dart';
 import 'package:watchstore/widgets/primary_button.dart';
-
-import '../resources/text_style.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
@@ -18,22 +17,7 @@ class RegisterScreen extends StatelessWidget {
 
     return SafeArea(
       child: Scaffold(
-        appBar: PreferredSize(
-            preferredSize: Size(size.width, size.height * 0.1),
-            child: Container(
-              margin: const EdgeInsets.symmetric(horizontal: Dimens.small),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  IconButton(
-                      onPressed: () {}, icon: const Icon(Icons.arrow_back_ios)),
-                  const Text(
-                    Strings.register,
-                    style: CustomTextStyle.titleTextStyle,
-                  )
-                ],
-              ),
-            )),
+        appBar: CustomRegisterAppBar(size: size),
         body: SafeArea(
           child: SizedBox(
             width: double.infinity,

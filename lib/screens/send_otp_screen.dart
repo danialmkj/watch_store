@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:watchstore/config/routing/route_path.dart';
 import 'package:watchstore/gen/assets.gen.dart';
 import 'package:watchstore/resources/dimens.dart';
 import 'package:watchstore/resources/strings.dart';
@@ -25,7 +26,9 @@ class SendOtpScreen extends StatelessWidget {
               lable: Strings.enterYourNumber,
               hint: '09*********',
               controller: _controller),
-          CustomPrimaryButton(textButton: Strings.next, onPressed: () {}),
+          CustomPrimaryButton(
+              textButton: Strings.next,
+              onPressed: () => Navigator.of(context).pushNamed(RoutePath.getOtpScreen)),
         ],
       ),
     );
