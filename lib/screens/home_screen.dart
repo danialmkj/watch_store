@@ -1,23 +1,21 @@
 import 'package:flutter/material.dart';
-
-import 'list_product_screen.dart';
+import 'package:watchstore/widgets/custom_search_box_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+
     return Scaffold(
-      backgroundColor: Colors.green,
-      body: Center(
-        child: TextButton(
-            onPressed: () => 
-            Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => ProductScreen(),
-                )),
-            child: Text('Nestd Screen')),
+      body: SafeArea(
+        child: Column(
+          children: [
+            //Search Box
+            CustomSearchBoxWidget(size: size)
+            ],
+        ),
       ),
     );
   }
