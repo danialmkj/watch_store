@@ -17,6 +17,11 @@ class _MainWrapperState extends State<MainWrapper> {
   //Selected Index
   int selectedIndex = ItemIndex.home;
 
+  //Lsit History Navigation
+  final List<int> _historyNavList = [
+    ItemIndex.home //def value
+  ];
+
   //Globak Key
   final GlobalKey<NavigatorState> _home_key = GlobalKey();
   final GlobalKey<NavigatorState> _basket_key = GlobalKey();
@@ -33,6 +38,11 @@ class _MainWrapperState extends State<MainWrapper> {
   Future<bool> _onWillPop() async {
     if (_mapKey[selectedIndex]!.currentState!.canPop()) {
       _mapKey[selectedIndex]!.currentState!.pop();
+    } else if (_historyNavList.length > 1) {
+      setState(() {
+        _historyNavList.removeLast();
+        selectedIndex = _historyNavList.last;
+      });
     }
     return false;
   }
@@ -57,6 +67,7 @@ class _MainWrapperState extends State<MainWrapper> {
                   child: IndexedStack(
                     index: selectedIndex,
                     children: [
+                      //using nested navigation
                       Navigator(
                           key: _home_key,
                           onGenerateRoute: (settings) => MaterialPageRoute(
@@ -69,6 +80,7 @@ class _MainWrapperState extends State<MainWrapper> {
                           key: _profile_key,
                           onGenerateRoute: (settings) => MaterialPageRoute(
                               builder: (context) => const ProfileScreen())),
+
                       //HomeScreen(),
                       // BasketScreen(),
                       // ProfileScreen(),
@@ -111,5 +123,6 @@ class _MainWrapperState extends State<MainWrapper> {
 
   void changeNavItem(int index) => setState(() {
         selectedIndex = index;
+        _historyNavList.add(index);
       });
 }
