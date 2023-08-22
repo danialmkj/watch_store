@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class CustomNavItem extends StatelessWidget {
-  CustomNavItem({
+  const CustomNavItem({
     super.key,
     required this.svgPath,
     required this.navItemText,
@@ -11,10 +11,10 @@ class CustomNavItem extends StatelessWidget {
     required this.isActive,
   });
 
-  String svgPath;
-  String navItemText;
-  void Function() onTap;
-  bool isActive;
+  final String svgPath;
+  final String navItemText;
+  final void Function() onTap;
+  final bool isActive;
 
   @override
   Widget build(BuildContext context) {

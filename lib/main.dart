@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:watchstore/config/routing/route_path.dart';
 import 'package:watchstore/config/routing/router.dart';
 import 'package:watchstore/config/theme/theme.dart';
-import 'package:watchstore/screens/main_wrapper.dart';
 
 void main() {
   runApp(const MyApp());

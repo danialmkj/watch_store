@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class CustomPrimaryButton extends StatelessWidget {
   final String textButton;
-  void Function() onPressed;
+  final void Function() onPressed;
 
-  CustomPrimaryButton(
+  const CustomPrimaryButton(
       {super.key, required this.textButton, required this.onPressed});
 
   @override
