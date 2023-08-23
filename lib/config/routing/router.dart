@@ -14,7 +14,7 @@ Map<String, Widget Function(BuildContext context)> routes = {
   RoutePath.getOtpScreen :(context) => const GetOtpScreen(),
   RoutePath.registerScreen :(context) => const RegisterScreen(),
   RoutePath.mainWrapper :(context) => const MainWrapper(),
-  RoutePath.homeScreen :(context) => const HomeScreen(),
+  RoutePath.homeScreen :(context) => HomeScreen(),
   RoutePath.basketScreen :(context) => const BasketScreen(),
   RoutePath.profileScreen :(context) => const ProfileScreen(),
 };

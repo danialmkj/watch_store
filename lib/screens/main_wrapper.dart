@@ -71,7 +71,7 @@ class _MainWrapperState extends State<MainWrapper> {
                       Navigator(
                           key: _home_key,
                           onGenerateRoute: (settings) => MaterialPageRoute(
-                              builder: (context) => const HomeScreen())),
+                              builder: (context) => HomeScreen())),
                       Navigator(
                           key: _basket_key,
                           onGenerateRoute: (settings) => MaterialPageRoute(
