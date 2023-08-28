@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:watchstore/resources/dimens.dart';
-import 'package:watchstore/utils/extenstions/sizedbox_extenstion.dart';
+import 'package:watchstore/utils/extenstions/extenstion.dart';
 
 class CustomCategoryWidget extends StatelessWidget {
   const CustomCategoryWidget({

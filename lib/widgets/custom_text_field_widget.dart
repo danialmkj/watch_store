@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:watchstore/resources/dimens.dart';
 import 'package:watchstore/resources/text_style.dart';
-import 'package:watchstore/utils/extenstions/sizedbox_extenstion.dart';
+import 'package:watchstore/utils/extenstions/extenstion.dart';
 
 class CustomTextFieldWidget extends StatelessWidget {
   const CustomTextFieldWidget({

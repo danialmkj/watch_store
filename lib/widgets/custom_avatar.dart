@@ -3,7 +3,7 @@ import 'package:watchstore/gen/assets.gen.dart';
 import 'package:watchstore/resources/dimens.dart';
 import 'package:watchstore/resources/strings.dart';
 import 'package:watchstore/resources/text_style.dart';
-import 'package:watchstore/utils/extenstions/sizedbox_extenstion.dart';
+import 'package:watchstore/utils/extenstions/extenstion.dart';
 
 class CustomAvatar extends StatelessWidget {
   CustomAvatar({super.key});

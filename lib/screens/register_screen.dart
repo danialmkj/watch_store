@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:watchstore/resources/dimens.dart';
 import 'package:watchstore/resources/strings.dart';
-import 'package:watchstore/utils/extenstions/sizedbox_extenstion.dart';
+import 'package:watchstore/utils/extenstions/extenstion.dart';
 import 'package:watchstore/widgets/custom_avatar.dart';
 import 'package:watchstore/widgets/custom_register_app_bar.dart';
 import 'package:watchstore/widgets/custom_text_field_widget.dart';

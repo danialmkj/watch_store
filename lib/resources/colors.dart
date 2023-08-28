@@ -9,6 +9,7 @@ abstract class AppColors {
   static const Color buttonColor = Color.fromARGB(255, 0, 217, 251);
   static const Color primaryColor = Color.fromARGB(255, 0, 217, 251);
   static const Color surfaceColor = Color.fromARGB(255, 243, 243, 243);
+  static const Color amazingColor = Color.fromARGB(255, 57, 24, 80);
   static const List<Color> classicCategoryColors = [
     Color.fromARGB(255, 255, 166, 114),
     Color.fromARGB(255, 255, 227, 200)
@@ -25,5 +26,9 @@ abstract class AppColors {
   static const List<Color> descktopCategoryColors = [
     Color(0xff8396e1),
     Color(0xffe6fcff),
+  ];
+  static const List<Color> listGradientColors = [
+    Colors.black12,
+    Colors.black12,
   ];
 }
